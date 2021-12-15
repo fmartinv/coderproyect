@@ -5,7 +5,7 @@
 }
 body {
 	font-family: 'Roboto', sans-serif;
-	background-color: #e57c04;
+	background-color: #ffff;
 }
 a {
 	text-decoration: none;
@@ -25,9 +25,10 @@ img[width][height] {
 .main__container {
 	max-width: 1300px;
 	min-width: 360px;
+	margin: auto;
 }
 .nav {
-	background-color: #e57c04;
+	background-color: #ffff;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -38,6 +39,11 @@ img[width][height] {
 }
 .nav__link {
 	padding: 1em;
+	color: black;
+}
+.nav__link a {
+	color: black;
+	font-size: 1rem;
 }
 
 .social__links {
@@ -47,6 +53,7 @@ img[width][height] {
 }
 .social__links a {
 	padding: 1em;
+	color: black;
 }
 .img-background-principal {
 	background-size: cover;
@@ -56,6 +63,36 @@ img[width][height] {
 }
 .footer {
 	display: flex;
-	flex-direction: column;
-	background-color: #faa300;
+	flex-direction: row;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	max-height: 20px;
+}
+
+.main-section-content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1em;
+}
+
+/* Nosotros*/
+.container__nosotros {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.video__nosotros {
+	max-width: 1200px;
+}
+div.images-nosotros {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 1em;
+}
+/*Contacto*/
+.container__contacto {
+	background-color: #f3b700;
+	text-align: center;
 }
