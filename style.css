@@ -15,9 +15,10 @@ li {
 }
 img {
 	max-width: 100%;
+	display: block;
 }
 img[width] {
-	width: auto;
+	width: 100%;
 }
 img[width][height] {
 	height: auto;
@@ -34,9 +35,22 @@ img[width][height] {
 	flex-wrap: wrap;
 	align-items: center;
 }
+.nav--bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #ffff;
+}
 .nav__links {
 	display: flex;
 	justify-content: space-around;
+}
+.nav__links__bottom {
+	display: flex;
+	justify-content: space-between;
 }
 .nav__link {
 	padding: 1em;
@@ -56,48 +70,163 @@ img[width][height] {
 	padding: 1em;
 	color: black;
 }
+i {
+	font-size: 1.3rem;
+}
 .logo img {
 	max-height: 2rem;
 	margin: 4px;
 }
 .img-background-principal {
 	background-size: cover;
-	background-position: center;
-	max-height: 40vh;
+	background-position: bottom;
+	max-height: 60vh;
 	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.8);
 }
+.img-background-principal::before {
+	content: 'Growler Beer';
+	position: absolute;
+	color: #ffff;
+	font-size: 4rem;
+}
+
 .footer {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border-top: 1px solid black;
-	max-height: 20px;
+	max-height: 2rem;
 }
 
 .main-section-content {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	gap: 1em;
+	grid-template-rows: 1fr 70vh;
+	gap: 1rem;
 }
-
+.content-div-big {
+	margin-top: 1rem;
+	overflow: hidden;
+}
+.content-div-flex {
+	display: flex;
+	flex-direction: column;
+	align-content: baseline;
+	justify-content: flex-end;
+}
+.section-content-div {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
 /* Nosotros*/
 .container__nosotros {
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 22% 40%;
+	/* justify-content: center;
 	align-items: center;
+	flex-direction: column; */
 }
 
 .video__nosotros {
-	max-width: 1200px;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+	max-height: 60vh;
+}
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 80%;
+	height: 80%;
+	margin: auto;
 }
 div.images-nosotros {
 	display: grid;
 	grid-auto-flow: column;
 	gap: 1em;
+	margin: 1rem;
 }
-/*Contacto*/
+/* Servicios*************/
+.container__servicios {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 30% 30% 30%;
+	gap: 1rem;
+	overflow: hidden;
+}
+/*Productos**********/
+
+.container__productos {
+	display: grid;
+	grid-template-columns: repeat(3, 30%);
+	grid-template-rows: repeat(3, 30%);
+	gap: 1rem;
+	overflow: hidden;
+	margin: 1rem;
+}
+.div__productos {
+	padding: auto;
+	overflow: hidden;
+}
+
+/*Contacto*********/
 .container__contacto {
 	background-color: #f3b700;
 	text-align: center;
+}
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.main-section-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 1rem;
+	}
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px) {
+	.main-section-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 1rem;
+	}
+	.content-div-flex {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: flex-end;
+		margin-top: 3rem;
+	}
+	.container__servicios {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 1rem;
+		overflow: hidden;
+	}
+	.container__productos {
+		display: grid;
+		grid-auto-flow: column dense;
+		gap: 1rem;
+		overflow: hidden;
+		
 }

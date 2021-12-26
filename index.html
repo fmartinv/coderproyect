@@ -14,6 +14,10 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>Beercompany🍺</title>
 	</head>
@@ -26,12 +30,7 @@
 							><img src="asets/beer.png" alt="" srcset=""
 						/></a>
 					</div>
-					<ul class="nav__links">
-						<li class="nav__link"><a href="nosotros.html">nosotros</a></li>
-						<li class="nav__link"><a href="servicios.html">servicios</a></li>
-						<li class="nav__link"><a href="productos.html">productos</a></li>
-						<li class="nav__link"><a href="formulario.html">contacto</a></li>
-					</ul>
+
 					<ul class="social__links">
 						<li class="social__link">
 							<a href=""><i class="fab fa-instagram"></i></a>
@@ -47,21 +46,35 @@
 			</header>
 			<main>
 				<div class="img-background-principal">
-					<img src="asets/factory1.jpeg" alt="" srcset="" />
+					<img src="asets/factory2b.jpeg" alt="" srcset="" />
 				</div>
-				<h1>Growler Beer</h1>
+				<nav class="nav--bottom">
+					<ul class="nav__links__bottom">
+						<li class="nav__link"><a href="nosotros.html">nosotros</a></li>
+						<li class="nav__link"><a href="servicios.html">servicios</a></li>
+						<li class="nav__link"><a href="productos.html">productos</a></li>
+						<li class="nav__link"><a href="formulario.html">contacto</a></li>
+					</ul>
+				</nav>
+
 				<section class="main-section-content">
-					<div><img src="asets/chopers.jpeg" alt="" srcset="" /></div>
-					<div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum non
-							dolore labore sed vitae. Eius assumenda, optio fuga fugit dolorem
-							accusantium laboriosam cupiditate
-						</p>
+					<div class="content-div-big">
+						<img src="asets/chopers.jpeg" alt="" srcset="" />
+					</div>
+					<div class="content-div-flex">
+						<div>
+							<h1>Growler Beer</h1>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+								non dolore labore sed vitae. Eius assumenda, optio fuga fugit
+								dolorem accusantium laboriosam cupiditate
+							</p>
+						</div>
 						<img src="asets/beer-glasses.jpeg" alt="" srcset="" />
 					</div>
 
 					<div class="section-content-div">
+						<h2>Selección Natural</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum non
 							dolore labore sed vitae. Eius assumenda, optio fuga fugit dolorem
@@ -89,5 +102,9 @@
 				</ul>
 			</footer>
 		</div>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 </html>

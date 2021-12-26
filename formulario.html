@@ -22,11 +22,13 @@
 			<header>
 				<nav class="nav">
 					<div class="logo">
-						<a href="index.html">Logo</a>
+						<a href="index.html"
+							><img src="asets/beer.png" alt="" srcset=""
+						/></a>
 					</div>
 					<ul class="nav__links">
 						<li class="nav__link"><a href="nosotros.html">nosotros</a></li>
-						<li class="nav__link"><a href="servicios.html">sevicios</a></li>
+						<li class="nav__link"><a href="servicios.html">servicios</a></li>
 						<li class="nav__link"><a href="productos.html">productos</a></li>
 						<li class="nav__link"><a href="formulario.html">contacto</a></li>
 					</ul>
@@ -59,24 +61,37 @@
 							placeholder="Ingresa tu apellido"
 							name="Apellido"
 						/>
-						<input type="number" name="Edad" id="" required />
-						<input type="tel" name="" id="" />
-						<input type="submit" value="registrarme" for="enviar-nombre" />
+						<input
+							type="email"
+							name="email"
+							id=""
+							placeholder="email"
+							required
+						/>
+						<input type="tel" name="" id="" placeholder="Telefono" />
+
 						<br />
 						<div>
-							<h3>Sexo</h3>
-							<p>Hombre</p>
+							<h3>Consulta</h3>
+							<p>Servicios</p>
 							<input type="radio" name="Sexo" id="" />
-							<p>Mujer</p>
+							<p>Productos</p>
 							<input type="radio" name="Sexo" id="" />
-							<p>No binario</p>
+							<p>Franquicias</p>
 							<input type="radio" name="Sexo" id="" />
-							<p>No quiero decirlo</p>
+							<p>Otros</p>
 							<input type="radio" name="Sexo" id="" />
+						</div>
+						<div>
+							<textarea id="w3review" name="w3review" rows="4" cols="40">
+Su consulta
+</textarea
+							>
 						</div>
 						<div>
 							<p>Acepta Terminos y Condicione</p>
 							<input type="checkbox" name="Acepta" id="" />
+							<input type="submit" value="Enviar" for="enviar-nombre" />
 						</div>
 					</form>
 				</div>
