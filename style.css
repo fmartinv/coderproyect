@@ -24,7 +24,7 @@ img[width][height] {
 	height: auto;
 }
 .main__container {
-	max-width: 1300px;
+	max-width: 1230px;
 	min-width: 360px;
 	margin: auto;
 }
@@ -127,9 +127,6 @@ i {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 22% 40%;
-	/* justify-content: center;
-	align-items: center;
-	flex-direction: column; */
 }
 
 .video__nosotros {
@@ -155,14 +152,7 @@ div.images-nosotros {
 	gap: 1em;
 	margin: 1rem;
 }
-/* Servicios*************/
-.container__servicios {
-	display: grid;
-	grid-template-columns: 30% 70%;
-	grid-template-rows: 30% 30% 30%;
-	gap: 1rem;
-	overflow: hidden;
-}
+
 /*Productos**********/
 
 .container__productos {
@@ -178,11 +168,6 @@ div.images-nosotros {
 	overflow: hidden;
 }
 
-/*Contacto*********/
-.container__contacto {
-	background-color: #f3b700;
-	text-align: center;
-}
 /* Escritorio grande */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 }
@@ -216,17 +201,17 @@ div.images-nosotros {
 		justify-content: flex-end;
 		margin-top: 3rem;
 	}
-	.container__servicios {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: auto;
-		gap: 1rem;
-		overflow: hidden;
-	}
+
 	.container__productos {
 		display: grid;
 		grid-auto-flow: column dense;
 		gap: 1rem;
 		overflow: hidden;
-		
+	}
+	.img-background-principal {
+		max-height: 40vh;
+	}
+	.img-background-principal::before {
+		font-size: 2rem;
+	}
 }

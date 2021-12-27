@@ -1,0 +1,31 @@
+/*Servicios********/
+
+.container__servicios {
+	display: grid;
+	grid-template-columns: 30% 70%;
+	grid-template-rows: 33% 33% 33%;
+	gap: 1rem;
+	margin: 2rem;
+}
+.div__servicios_titulo {
+	background-color: darkgoldenrod;
+	text-align: center;
+}
+.div_servicios_contenido {
+	background-color: darkgray;
+	padding: 1rem;
+}
+/*Contacto*********/
+.container__contacto {
+	background-color: #f3b700;
+	max-width: 50%;
+	margin: auto;
+}
+@media only screen and (max-width: 575px) {
+	.container__servicios {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 1rem;
+	}
+}
