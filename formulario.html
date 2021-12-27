@@ -49,53 +49,64 @@
 			<main>
 				<div class="container__contacto">
 					<h3>Contacto</h3>
-					.
-					<form action="#" method="get">
-						<div>
+
+					<form action="#" method="get" class="form">
+						<div class="form__div">
+							<p>nombre</p>
 							<input
 								type="text"
 								placeholder="Ingresa tu nombre"
 								name="Nombre"
 								label="enviar-nombre"
+								class="form__input"
+							/>
+							<p>Apellido</p>
+							<input
+								type="text"
+								placeholder="Ingresa tu Apellido"
+								name="Apellido"
+								label="enviar-apellido"
+								class="form__input"
 							/>
 						</div>
 
-						<input
-							type="text"
-							placeholder="Ingresa tu apellido"
-							name="Apellido"
-						/>
-						<input
-							type="email"
-							name="email"
-							id=""
-							placeholder="email"
-							required
-						/>
-						<input type="tel" name="" id="" placeholder="Telefono" />
-
-						<br />
-						<div>
-							<h3>Consulta</h3>
-							<p>Servicios</p>
-							<input type="radio" name="Sexo" id="" />
-							<p>Productos</p>
-							<input type="radio" name="Sexo" id="" />
-							<p>Franquicias</p>
-							<input type="radio" name="Sexo" id="" />
-							<p>Otros</p>
-							<input type="radio" name="Sexo" id="" />
+						<div class="form__div">
+							<p>email</p>
+							<input
+								type="email"
+								placeholder="Ingresa tu nombre"
+								name="Email"
+								label="enviar-email"
+								class="form__input"
+							/>
+							<p>telefono</p>
+							<input type="tel" name="Telefono" id="" class="form__input" />
 						</div>
-						<div>
-							<textarea id="w3review" name="w3review" rows="4" cols="40">
-Su consulta
-</textarea
+
+						<div class="form__radio">
+							<p>Servicios</p>
+							<input type="radio" name="Sexo" id="" class="radio__input" />
+							<p>Productos</p>
+							<input type="radio" name="Sexo" id="" class="radio__input" />
+							<p>Franquicias</p>
+							<input type="radio" name="Sexo" id="" class="radio__input" />
+							<p>Otros</p>
+							<input type="radio" name="Sexo" id="" class="radio__input" />
+						</div>
+						<div class="text__area">
+							<textarea
+								id="textarea"
+								name="Textarea"
+								placeholder="su consulta "
 							>
+							</textarea>
 						</div>
 						<div>
 							<p>Acepta Terminos y Condicione</p>
 							<input type="checkbox" name="Acepta" id="" />
-							<input type="submit" value="Enviar" for="enviar-nombre" />
+							<button>
+								<input type="submit" value="Enviar" for="enviar-nombre" />
+							</button>
 						</div>
 					</form>
 				</div>
