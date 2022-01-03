@@ -7,9 +7,20 @@
 	gap: 1rem;
 	margin: 2rem;
 }
+.servicios__heigth {
+	min-height: 80vh;
+	margin: 2rem;
+}
 .div__servicios_titulo {
 	background-color: darkgoldenrod;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.div__servicios_titulo h2 {
+	font-size: 3rem;
+	font-weight: 700;
 }
 .div_servicios_contenido {
 	background-color: darkgray;

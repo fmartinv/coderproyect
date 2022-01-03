@@ -24,7 +24,7 @@ img[width][height] {
 	height: auto;
 }
 .main__container {
-	max-width: 1230px;
+	max-width: 1330px;
 	min-width: 360px;
 	margin: auto;
 }
@@ -91,7 +91,7 @@ i {
 	content: 'Growler Beer';
 	position: absolute;
 	color: #ffff;
-	font-size: 4rem;
+	font-size: 5rem;
 }
 
 .footer {
@@ -99,6 +99,9 @@ i {
 	flex-direction: row;
 	justify-content: space-between;
 	max-height: 2rem;
+	margin-top: 3rem;
+	padding: 2rem;
+	background-color: #f3b700;
 }
 
 .main-section-content {
@@ -114,13 +117,18 @@ i {
 .content-div-flex {
 	display: flex;
 	flex-direction: column;
-	align-content: baseline;
-	justify-content: flex-end;
+	justify-content: space-between;
+}
+.content-div-flex-up {
+	padding-top: 1rem;
 }
 .section-content-div {
 	display: flex;
 	align-items: flex-start;
 	flex-direction: column;
+}
+.section-content-h1 {
+	font-size: 8rem;
 }
 /* Nosotros*/
 .container__nosotros {
@@ -157,15 +165,22 @@ div.images-nosotros {
 
 .container__productos {
 	display: grid;
-	grid-template-columns: repeat(3, 30%);
+	grid-template-columns: repeat(2, 50%);
 	grid-template-rows: repeat(3, 30%);
 	gap: 1rem;
-	overflow: hidden;
 	margin: 1rem;
 }
 .div__productos {
 	padding: auto;
 	overflow: hidden;
+}
+.div__productos__title {
+	font-size: 4rem;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.span_color {
+	color: #f3b700;
 }
 
 /* Escritorio grande */
@@ -180,10 +195,32 @@ div.images-nosotros {
 		grid-template-rows: auto;
 		gap: 1rem;
 	}
+	.content-div-flex-up {
+		padding-top: 1rem;
+		margin-bottom: 1em;
+	}
+	.section-content-h1 {
+		font-size: 4rem;
+		text-align: center;
+	}
 }
 
 /* Tablets y phablets */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+	.main-section-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 1rem;
+	}
+	.content-div-flex-up {
+		padding-top: 1rem;
+		margin-bottom: 1em;
+	}
+	.section-content-h1 {
+		font-size: 4rem;
+		text-align: center;
+	}
 }
 
 /* Teléfonos */
@@ -213,5 +250,19 @@ div.images-nosotros {
 	}
 	.img-background-principal::before {
 		font-size: 2rem;
+	}
+	.main-section-content {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+		gap: 1rem;
+	}
+	.content-div-flex-up {
+		padding-top: 1rem;
+		margin-bottom: 1em;
+	}
+	.section-content-h1 {
+		font-size: 4rem;
+		text-align: center;
 	}
 }
