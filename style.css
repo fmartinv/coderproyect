@@ -203,6 +203,9 @@ div.images-nosotros {
 		font-size: 4rem;
 		text-align: center;
 	}
+	.div__productos__title {
+		font-size: 2rem;
+	}
 }
 
 /* Tablets y phablets */
@@ -221,6 +224,10 @@ div.images-nosotros {
 		font-size: 4rem;
 		text-align: center;
 	}
+	.div__productos__title {
+		font-size: 2rem;
+	}
+}
 }
 
 /* Teléfonos */
@@ -264,5 +271,8 @@ div.images-nosotros {
 	.section-content-h1 {
 		font-size: 4rem;
 		text-align: center;
+	}
+	.div__productos__title {
+		font-size: 1rem;
 	}
 }
