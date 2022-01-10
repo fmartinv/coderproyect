@@ -18,9 +18,9 @@
 		<title>Beercompany🍺/nosotros</title>
 	</head>
 	<body>
-		<div class="main__container">
-			<header>
-				<nav class="nav">
+		<header>
+			<nav class="nav">
+				<div class="main__container nav--flex">
 					<div class="logo">
 						<a href="index.html"
 							><img src="asets/beer.png" alt="" srcset=""
@@ -43,27 +43,29 @@
 							<a href=""><i class="fab fa-whatsapp"></i></a>
 						</li>
 					</ul>
-				</nav>
-			</header>
-			<main>
-				<div class="container__nosotros">
-					<div class="img-background-principal">
-						<img src="asets/factory2.jpeg" alt="" srcset="" />
-					</div>
-					<div class="video__nosotros">
-						<iframe
-							width="560"
-							height="315"
-							src="https://www.youtube.com/embed/P88bp1SmM7Q"
-							title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen
-						></iframe>
-					</div>
 				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container__nosotros">
+				<div class="img-background-principal">
+					<img src="asets/factory2.jpeg" alt="" srcset="" />
+				</div>
+				<div class="video__nosotros">
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/P88bp1SmM7Q"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen
+					></iframe>
+				</div>
+			</div>
+			<div class="main__container">
 				<div>
-					<p class="parrafo__nosotros wow animate__bounce">
+					<p class="parrafo__nosotros">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
 						perspiciatis! Dolorum quisquam tempore cum totam, soluta saepe quod
 						ab fugiat accusantium nemo quis, ipsum dolores esse animi, impedit
@@ -81,8 +83,10 @@
 						<img src="asets/beer-glass-up.jpeg" alt="" srcset="" />
 					</div>
 				</div>
-			</main>
-			<footer class="footer footer__style">
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="main__container footer--flex">
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta
 				</p>
@@ -98,7 +102,7 @@
 						<a href=""><i class="fab fa-whatsapp"></i></a>
 					</li>
 				</ul>
-			</footer>
-		</div>
+			</div>
+		</footer>
 	</body>
 </html>

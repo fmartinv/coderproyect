@@ -30,7 +30,11 @@ img[width][height] {
 }
 .nav {
 	background-color: #ffff;
-	display: flex;
+	padding: 1.4rem;
+	
+}
+.nav--flex{
+display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
@@ -95,13 +99,16 @@ i {
 }
 
 .footer {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	
 	max-height: 2rem;
 	margin-top: 3rem;
 	padding: 2rem;
 	background-color: #f3b700;
+}
+.footer--flex{
+display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .main-section-content {
@@ -168,7 +175,7 @@ div.images-nosotros {
 	grid-template-columns: repeat(2, 50%);
 	grid-template-rows: repeat(3, 30%);
 	gap: 1rem;
-	margin: 1rem;
+	margin-top: 1.5rem;
 }
 .div__productos {
 	padding: auto;

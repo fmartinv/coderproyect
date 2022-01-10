@@ -6,6 +6,9 @@
 	grid-template-rows: 33% 33% 33%;
 	gap: 1rem;
 	margin: 2rem;
+	max-width: 1330px;
+	min-width: 360px;
+	margin: auto;
 }
 .servicios__heigth {
 	min-height: 80vh;
@@ -34,6 +37,13 @@
 	margin: 2rem auto;
 	display: grid;
 	place-items: center;
+}
+.bg {
+	background-image: url('asets/factory2.jpeg');
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .form {

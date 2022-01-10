@@ -22,9 +22,9 @@
 		<title>Beercompany🍺</title>
 	</head>
 	<body>
-		<div class="main__container">
-			<header>
-				<nav class="nav">
+		<header>
+			<nav class="nav">
+				<div class="main__container nav--flex">
 					<div class="logo">
 						<a href="index.html"
 							><img src="asets/beer.png" alt="" srcset=""
@@ -42,54 +42,54 @@
 							<a href=""><i class="fab fa-whatsapp"></i></a>
 						</li>
 					</ul>
-				</nav>
-			</header>
-			<main>
-				<div class="img-background-principal">
-					<img src="asets/factory2b.jpeg" alt="" srcset="" />
 				</div>
-				<nav class="nav--bottom">
-					<ul class="nav__links__bottom">
-						<li class="nav__link"><a href="nosotros.html">nosotros</a></li>
-						<li class="nav__link"><a href="servicios.html">servicios</a></li>
-						<li class="nav__link"><a href="productos.html">productos</a></li>
-						<li class="nav__link"><a href="formulario.html">contacto</a></li>
-					</ul>
-				</nav>
+			</nav>
+		</header>
+		<main class="">
+			<div class="img-background-principal">
+				<img src="asets/factory2b.jpeg" alt="" srcset="" />
+			</div>
+			<nav class="nav--bottom">
+				<ul class="nav__links__bottom">
+					<li class="nav__link"><a href="nosotros.html">nosotros</a></li>
+					<li class="nav__link"><a href="servicios.html">servicios</a></li>
+					<li class="nav__link"><a href="productos.html">productos</a></li>
+					<li class="nav__link"><a href="formulario.html">contacto</a></li>
+				</ul>
+			</nav>
 
-				<section class="main-section-content">
-					<div class="content-div-big">
-						<img src="asets/chopers.jpeg" alt="" srcset="" />
-					</div>
-					<div class="content-div-flex">
-						<div class="content-div-flex-up">
-							<img src="asets/beer-glasses.jpeg" alt="" srcset="" />
-						</div>
+			<section class="main-section-content main__container">
+				<div class="content-div-big">
+					<img src="asets/chopers.jpeg" alt="" srcset="" />
+				</div>
+				<div class="content-div-flex">
+					<div class="content-div-flex-up">
 						<img src="asets/beer-glasses.jpeg" alt="" srcset="" />
 					</div>
+					<img src="asets/beer-glasses.jpeg" alt="" srcset="" />
+				</div>
 
-					<div class="section-content-div">
-						<h1
-							class="section-content-h1 animate__animated animate__fadeInDown"
-						>
-							Grow<span class="span_color">ler</span> Beer
-						</h1>
-						<p>
-							La Seleccion natural de nuestra cebada, es el proceso clave de la
-							calidad de nuestra cerveza.
-						</p>
-					</div>
-					<div>
-						<img
-							src="asets/beer-glasses.jpeg"
-							alt=""
-							srcset=""
-							class="animate__animated animate__zoomIn"
-						/>
-					</div>
-				</section>
-			</main>
-			<footer class="footer footer__style">
+				<div class="section-content-div">
+					<h1 class="section-content-h1 animate__animated animate__fadeInDown">
+						Grow<span class="span_color">ler</span> Beer
+					</h1>
+					<p>
+						La Seleccion natural de nuestra cebada, es el proceso clave de la
+						calidad de nuestra cerveza.
+					</p>
+				</div>
+				<div>
+					<img
+						src="asets/beer-glasses.jpeg"
+						alt=""
+						srcset=""
+						class="animate__animated animate__zoomIn"
+					/>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="main__container footer--flex">
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta soluta
 				</p>
@@ -105,8 +105,9 @@
 						<a href=""><i class="fab fa-whatsapp"></i></a>
 					</li>
 				</ul>
-			</footer>
-		</div>
+			</div>
+		</footer>
+
 		<script src="/js/wow.min.js"></script>
 		<script>
 			new WOW().init();
