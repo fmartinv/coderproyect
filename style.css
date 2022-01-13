@@ -31,10 +31,9 @@ img[width][height] {
 .nav {
 	background-color: #ffff;
 	padding: 1.4rem;
-	
 }
-.nav--flex{
-display: flex;
+.nav--flex {
+	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
@@ -99,14 +98,13 @@ i {
 }
 
 .footer {
-	
 	max-height: 2rem;
 	margin-top: 3rem;
 	padding: 2rem;
 	background-color: #f3b700;
 }
-.footer--flex{
-display: flex;
+.footer--flex {
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 }
@@ -234,7 +232,6 @@ div.images-nosotros {
 	.div__productos__title {
 		font-size: 2rem;
 	}
-}
 }
 
 /* Teléfonos */
