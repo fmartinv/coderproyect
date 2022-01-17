@@ -23,12 +23,19 @@ img[width] {
 img[width][height] {
 	height: auto;
 }
+.imgLogo {
+	width: 1.6rem;
+	transition: width 1s;
+}
+.imgLogo:hover {
+	width: 2rem;
+}
 .main__container {
-	max-width: 1330px;
+	max-width: 1290px;
 	min-width: 360px;
 	margin: auto;
 }
-.nav {
+.nav--color {
 	background-color: #ffff;
 	padding: 1.4rem;
 }
@@ -37,6 +44,7 @@ img[width][height] {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
+	padding: 1.5rem;
 }
 .nav--bottom {
 	display: flex;
@@ -49,11 +57,12 @@ img[width][height] {
 }
 .nav__links {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 .nav__links__bottom {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
+	width: 60%;
 }
 .nav__link {
 	padding: 1em;
@@ -63,12 +72,27 @@ img[width][height] {
 	color: black;
 	font-size: 1rem;
 }
+/*boostrap nav****/
+.navbar-toggler {
+	background-color: #f3b700;
+}
+.navbar-nav .navbar-expand-lg .nav-link {
+	padding: 2rem;
+	font-size: 1.4rem;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+	border-bottom: 3px solid black;
+}
 
 .social__links {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
+ul.social__links {
+	margin-bottom: 0 !important;
+}
+
 .social__links a {
 	padding: 1em;
 	color: black;
@@ -101,7 +125,6 @@ i {
 	max-height: 2rem;
 	margin-top: 3rem;
 	padding: 2rem;
-	background-color: #f3b700;
 }
 .footer--flex {
 	display: flex;
@@ -118,11 +141,14 @@ i {
 .content-div-big {
 	margin-top: 1rem;
 	overflow: hidden;
+	animation-duration: 2s;
 }
 .content-div-flex {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	animation-duration: 2s;
+	animation-delay: 3s;
 }
 .content-div-flex-up {
 	padding-top: 1rem;
@@ -134,6 +160,8 @@ i {
 }
 .section-content-h1 {
 	font-size: 8rem;
+	animation-delay: 3s;
+	animation-duration: 2s;
 }
 /* Nosotros*/
 .container__nosotros {
@@ -171,18 +199,21 @@ div.images-nosotros {
 .container__productos {
 	display: grid;
 	grid-template-columns: repeat(2, 50%);
-	grid-template-rows: repeat(3, 30%);
-	gap: 1rem;
+	grid-template-rows: repeat(3, auto);
+	gap: 2rem;
 	margin-top: 1.5rem;
 }
 .div__productos {
 	padding: auto;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 .div__productos__title {
 	font-size: 4rem;
 	display: flex;
 	flex-wrap: nowrap;
+}
+.h1-main-products {
+	font-size: 8rem;
 }
 .span_color {
 	color: #f3b700;
@@ -211,10 +242,17 @@ div.images-nosotros {
 	.div__productos__title {
 		font-size: 2rem;
 	}
+	.footer--flex {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+	}
 }
 
 /* Tablets y phablets */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 575px) and (max-width: 767px) {
 	.main-section-content {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -229,7 +267,7 @@ div.images-nosotros {
 		font-size: 4rem;
 		text-align: center;
 	}
-	.div__productos__title {
+	.h1-main-products {
 		font-size: 2rem;
 	}
 }
@@ -252,15 +290,18 @@ div.images-nosotros {
 
 	.container__productos {
 		display: grid;
-		grid-auto-flow: column dense;
+		grid-template-columns: auto;
 		gap: 1rem;
 		overflow: hidden;
+	}
+	.h1-main-products {
+		font-size: 4rem;
 	}
 	.img-background-principal {
 		max-height: 40vh;
 	}
 	.img-background-principal::before {
-		font-size: 2rem;
+		font-size: 3.5rem;
 	}
 	.main-section-content {
 		display: grid;
@@ -278,5 +319,12 @@ div.images-nosotros {
 	}
 	.div__productos__title {
 		font-size: 1rem;
+	}
+	.footer--flex {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
 	}
 }
